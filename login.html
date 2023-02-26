@@ -24,13 +24,10 @@
 	</div>
 
 	<script>
-		let username = document.getElementById('username').value;
-		let pwd = document.getElementById("pwd").value;
-
-        function check() {
-            alert(username)
-            alert(pwd)
-			if (username == "admin" && pwd == "admin") {
+		const check = () => {
+			let usernamevalue = document.getElementById("username").value;
+			let pwdvalue = document.getElementById("pwd").value;
+			if (usernamevalue == "admin" && pwdvalue == "admin") {
 				window.open('loginsuccess.html')
 			}
 			else {
