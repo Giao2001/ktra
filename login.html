@@ -18,9 +18,25 @@
 				<input type="password" class="form-control" id="pwd" placeholder="">
 			</div>
 			<div class="col-12">
-				<button type="submit" class="btn btn-primary mb-3">Đăng nhập</button>
+				<button type="submit" onclick="check()" class="btn btn-primary mb-3">Đăng nhập</button>
 			</div>
 		</form>
 	</div>
+
+	<script>
+		let username = document.getElementById('username').value;
+		let pwd = document.getElementById("pwd").value;
+
+        function check() {
+            alert(username)
+            alert(pwd)
+			if (username == "admin" && pwd == "admin") {
+				window.open('loginsuccess.html')
+			}
+			else {
+				alert("Sai thông tin đăng nhập!")
+			}
+		}
+	</script>
 </body>
 </html>
